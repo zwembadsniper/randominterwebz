@@ -6,60 +6,46 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="keywords" content="random, randomweb, question, humanity" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/sidebar.css">
-	<title>Cringe, we hurt your eyes</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/sidebar.css">
+	<title>About</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="../css/footer.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 </head>
-    
 <body>
-<!-- sidebar-->   
+    
 <div class="navbar">
 <ul>
-  <li><a class="active" href="">Home</a></li>
+  <li><a href="../">Home</a></li>
   <li><a href="/promote">Promote us</a></li>
-  <li><a href="/about">About</a></li>
+  <li><a class="active" href="/about">About</a></li>
 </ul> 
 </div>
-    <h1>Click the button below</h1>
-    <h2>To make yourself cringe</h2>
+    
+    <h1>Our mission?</h1>
+    <h2>Provide the world with useless websites</h2>
     <center>
-    <button class="button button1" onclick="openlinkFunction()">Click me</button>
-    <div class="sharewrapper">
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Hurt your eyes with all those cringeworthy websites" data-size="large" data-hashtags="cringe">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        <script src="https://apis.google.com/js/platform.js" async defer></script><g:plusone></g:plusone>
+    <div class="paragraph">
+        <p id="paragraphtext">We are a small group of web developers from the Netherlands who enjoy making useless stuff. we do not plan to monetize our site because nobody likes ads. if you really like our work or just want to get us a beer you can contact us below and donate via paypal or bitcoin. We hope everyone enjoys visiting useless sites on the web.</p> 
+        <p>-A few geeks ¯\_(ツ)_/¯</p>
+        <img class="markieimg" src='../images/markie.png'>
     </div>
     </center>
-    <img class="social" src="/images/social.png">
-    
-<script>
-    function openlinkFunction() {
-        window.open(
-        '/redirect.php',
-        '_blank'
-        );
-    }
-</script>
-    
-<!-- sidebar mobile-->
+    <!-- sidebar -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="">Home</a>
+    <a href="../">Home</a>
     <a href="/promote">Promote</a>
-    <a href="/about">About</a>
+    <a href="">About</a>
   </div>
 
    <div id="main">
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
    </div>
     
-
-   
-
-<script>
+    <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("main").style.marginLeft = "250px";
@@ -75,18 +61,18 @@
 }
 </script>
     
-<!-- Footer -->
+    <!-- Footer -->
     <footer class="footer-distributed">
 			<div class="footer-left">
 
 				<h3>Intel<span>LF</span></h3>
 
 				<p class="footer-links">
-					<a href="">Home</a>
+					<a href="../">Home</a>
 					-
-					<a href="/promote">Promote us!</a>
+					<a href="../promote">Promote us!</a>
 					-
-					<a href="/about">About</a>
+					<a href="">About</a>
 					
 				</p>
 
@@ -117,17 +103,5 @@
         
 		</footer>
     </div>
-    
-    <style>
-       @media (min-height: 930px) {
-           footer{
-	       position: fixed;
-	       bottom: 0;
-           }
-        }
-
-    </style>
-      
 </body>
-    
 </html>

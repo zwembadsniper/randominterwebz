@@ -1,3 +1,8 @@
+body {
+    background-image: url("../images/fade.png");
+    background-repeat: repeat-x;
+}
+
 h1 {
     text-align: center;
     font-family: roboto;
@@ -48,14 +53,90 @@ h2 {
 @media (min-width: 1600px) {
 .social {
     height: 50px;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-left: 10px;
     }
+
 }
 
 @media (max-width: 1599px) {
  .social {
     height: 50px;
-    padding-top: 50px;
-    }   
+    padding-top: 1px;
+    padding-left: 10px;
+    }
 }
+
+@media (min-width: 768px) {    
+    #mySidenav{
+        display: none;
+    }
+    #main {
+        display: none;
+    }
+    
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    }
+
+    li {
+    float: left;
+    }
+
+    li a {
+        display: block;
+        color: darkslategray;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a.active {
+        color:white;
+    }
+
+    li a:hover {
+        color:white;
+    }
+
+    a:hover:not(.active) {
+        background-color: cadetblue;
+    }
+
+    .active {
+        background-color:cadetblue;
+    }
+
+    .navbar {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+.paragraph {
+    font-family: sans-serif;
+    width: 800px;
+    max-width: 100%;
+    margin: 0, auto;
+}
+
+.markieimg {
+    height: auto;
+    padding-bottom: 0px;
+    margin-bottom: -18px;
+    width: 90%;
+}
+
+#paragraphtext {
+    max-width: 90%;
+}
+
