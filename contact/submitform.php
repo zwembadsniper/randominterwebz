@@ -1,5 +1,4 @@
 <?php
-//everything empty because u noobs can set up shit urself 
 $email = $_POST['email'];
 $msg = $_POST['message'];
 /**
